@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body {
+    background-color: #242A32;
+    width: 100vw;
+    height: 100vw;
+    font-family: 'Inter';
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    width: 100%;
+}
+
+.pt-12 {
+    padding-top: 3rem;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.text-primary {
+    color: #0296E5;
+}
+
+.text-secondary {
+    color: #67686D;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-third {
+    color: #3A3F47;
+}
+
+.text-background {
+    color: #242A32;
+}
+
+.text-grey {
+    color: #92929D;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none,
+    }
+}
+
+.scrollbar-default {
+    -ms-overflow-style: auto;
+    scrollbar-width: auto;
+
+    &::-webkit-scrollbar {
+        display: block;
+    }
+}
