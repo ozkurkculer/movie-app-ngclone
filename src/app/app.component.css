@@ -1,0 +1,21 @@
+.searchbar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3A3F47;
+    border-radius: 0.75rem;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+}
+
+.slider div{
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
