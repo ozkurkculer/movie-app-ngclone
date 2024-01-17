@@ -1,0 +1,6 @@
+<div style="color: #fff;display: flex;">
+@for (item of data; track item.id) {
+    <p>{{item.original_title}}</p>
+    <img src='https://image.tmdb.org/t/p/w500{{item.poster_path}}' alt="Movie Title">
+}
+</div>
