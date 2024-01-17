@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
+import { environment } from '../../environments/environment.development';
+
 
 @Component({
   selector: 'app-popularmovies',
@@ -17,7 +19,7 @@ export class PopularmoviesComponent implements OnInit {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: this.API_KEY,
+      Authorization: environment.apiKey,
     },
   };
 

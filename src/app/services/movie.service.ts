@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable} from 'rxjs';
-import { Movie } from '../movie.interface';
+import { environment } from '../../environments/environment.development';
+
 
 @Injectable({
   providedIn: 'root',
@@ -13,17 +13,16 @@ export class MovieService {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: this.API_KEY,
+      Authorization: environment.apiKey,
     },
   };
 
   constructor(private http: HttpClient) {}
 
-  getPopularMovies(): Observable<Movie[]> {
-    return this.http
-      .get<Movie[]>(
-        `${this.URL}/3/movie/popular?language=en-US&page=1`,
-        this.options
-      );
+  getPopularMovies() {
+    return this.http.get(`${this.URL}/3/movie/popular?language=en-US&page=1`, this.options).subscribe((data: any)=>{
+      console.log(data);
+      return data.results;
+    });
   }
 }

@@ -23,13 +23,17 @@
     <ul class="tab">
       @for(tab of tabs; track tab.id){
         <li class="tab-item active">
-          <a href="#">
+          <button >
             {{tab.title}}
-          </a>
+          </button>
           <br />
         </li>
       }
     </ul>
   </section>
-  <app-popularmovies></app-popularmovies>
+  <section>
+  </section>
+  <section class="tabs">
+    <app-popularmovies></app-popularmovies>
+  </section>
 </div>

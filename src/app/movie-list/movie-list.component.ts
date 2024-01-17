@@ -1,5 +1,4 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { Movie } from '../movie.interface';
 import { MovieService } from '../services/movie.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -12,13 +11,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 })
 export class MovieListComponent implements OnInit{
   httpClient = inject(HttpClient);
-  movies: Movie[] = [];
+  movies: any = [];
   constructor(private movieService: MovieService) {}
 
   ngOnInit(): void {
-    this.movieService.getPopularMovies().subscribe((movies) => {
-      console.log(movies);
-      this.movies = movies;
-    })
+    this.movies = this.movieService.getPopularMovies();
   }
 }
