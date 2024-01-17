@@ -11,4 +11,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'movie-app-ngclone';
+  tabs = [
+    { id: 0, name: 'Now Playing' }, { id: 1, name: 'Upcoming'  }, { id: 2, name: 'Top Rated'  }, { id: 3, name: 'Popular'  }
+  ]
 }
