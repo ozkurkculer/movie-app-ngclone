@@ -1,13 +1,13 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../../environments/environment.development';
+import { Observable, map } from 'rxjs';
+import { Movie } from '../movie.interface';
+import { environment } from '../../environments/environment';
 
-
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable({ providedIn: 'root' })
 export class MovieService {
   private URL = 'https://api.themoviedb.org/';
+  private http = inject(HttpClient);
 
   private options = {
     method: 'GET',
@@ -17,12 +17,12 @@ export class MovieService {
     },
   };
 
-  constructor(private http: HttpClient) {}
-
-  getPopularMovies() {
-    return this.http.get(`${this.URL}/3/movie/popular?language=en-US&page=1`, this.options).subscribe((data: any)=>{
-      console.log(data);
-      return data.results;
-    });
+  getPopularMovies(): Observable<Movie[]> {
+    return this.http
+      .get<{ results: Movie[] }>(
+        `${this.URL}/3/movie/popular?language=en-US&page=1`,
+        this.options
+      )
+      .pipe(map((response) => response.results));
   }
 }

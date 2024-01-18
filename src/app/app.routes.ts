@@ -18,5 +18,8 @@ export const routes: Routes = [
         path: '/wishlist',
         title: 'Wishlist | Movie App',
         component: WishlistpageComponent,
+    },
+    {
+        path: '/movie/:id',
     }
 ];

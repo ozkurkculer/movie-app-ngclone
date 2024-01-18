@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { ActivatedRoute, RouterOutlet } from '@angular/router';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { PopularmoviesComponent } from './popularmovies/popularmovies.component';
+import { MovieService } from './services/movie.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +14,7 @@ import { PopularmoviesComponent } from './popularmovies/popularmovies.component'
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+  movieser = inject(MovieService);
   title = 'movie-app-ngclone';
   tabs = [
     { id: 0, title: 'Now Playing', content: `` },
@@ -19,4 +22,10 @@ export class AppComponent {
     { id: 2, title: 'Top Rated', content: `` },
     { id: 3, title: 'Popular', content: `` },
   ];
+
+  // id = inject(ActivatedRoute).snapshot.paramMap.get('id');
+  // private titleService = inject(Title);
+  // setTitle() {
+  //   this.titleService.setTitle();
+  // }
 }

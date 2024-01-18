@@ -1,20 +1,23 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { MovieService } from '../services/movie.service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { Movie } from '../movie.interface';
 
 @Component({
   selector: 'app-movie-list',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [],
   templateUrl: './movie-list.component.html',
   styleUrl: './movie-list.component.css'
 })
 export class MovieListComponent implements OnInit{
   httpClient = inject(HttpClient);
-  movies: any = [];
+  movies: Movie[] = [];
   constructor(private movieService: MovieService) {}
 
   ngOnInit(): void {
-    this.movies = this.movieService.getPopularMovies();
+    this.movieService.getPopularMovies().subscribe((movies) => {
+      this.movies = movies;
+    });
   }
 }
