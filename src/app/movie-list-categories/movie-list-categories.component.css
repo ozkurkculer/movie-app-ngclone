@@ -1,0 +1,31 @@
+.tab {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.tab-item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    color: #67686D;
+    background-color: #242A32;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.active {
+    color: #fff;
+    border-bottom: 4px solid #67686D;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+<section class="flex justify-center">
+    <ul class="tab">
+        @for(tab of tabs; track tab.id){
+        <button class="tab-item" (click)="selectCategory(tab.id)"
+            [class]="{'active': tab.id === activeIndex, '': tab.id  !== activeIndex}">
+            <li>
+                <a>
+                    {{tab.title}}
+                </a>
+                <br />
+            </li>
+        </button>
+        }
+    </ul>
+</section>
+<section class="tabs">
+    <app-movie-list [movies]="data"></app-movie-list>
+</section>

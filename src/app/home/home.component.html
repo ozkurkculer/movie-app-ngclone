@@ -16,23 +16,7 @@
   <div class="slider-top-rated scrollbar-hide">
     <app-toprated-movie-list></app-toprated-movie-list>
   </div>
-  <section class="flex justify-center">
-    <ul class="tab">
-      @for(tab of tabs; track tab.id){
-      <button class="tab-item" (click)="selectCategory(tab.id)" [class.active]="isActive">
-        <li>
-          <a>
-            {{tab.title}}
-          </a>
-          <br />
-        </li>
-      </button>
-      }
-    </ul>
-  </section>
-  <section class="tabs">
-    <app-movie-list [movies]="data"></app-movie-list>
-  </section>
+  <app-movie-list-categories></app-movie-list-categories>
   <!-- <div id="tabset">
     <div id="titles">
 
