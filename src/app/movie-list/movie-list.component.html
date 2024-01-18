@@ -1,5 +1,11 @@
-<div>
-    @for (movie of movies; track movie.id) {
-    <p>{{movie}}</p>
+<div class="content">
+    @for (item of movies; track item.id) {
+    <a routerLink="/movie/{{item.id}}">
+        <div class="imagecontent">
+            <img src='https://image.tmdb.org/t/p/w500{{item.poster_path}}' alt="Movie Title" width="200px"
+                class="imageposter">
+            <!-- <p>{{item.original_title}}</p> -->
+        </div>
+    </a>
     }
 </div>

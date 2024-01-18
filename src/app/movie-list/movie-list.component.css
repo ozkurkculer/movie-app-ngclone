@@ -1,0 +1,35 @@
+.imagecontent {
+    width: 200px;
+    height: auto;
+}
+
+.imageposter {
+    border-radius: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none,
+    }
+}
+
+.scrollbar-default {
+    -ms-overflow-style: auto;
+    scrollbar-width: auto;
+
+    &::-webkit-scrollbar {
+        display: block;
+    }
+}
