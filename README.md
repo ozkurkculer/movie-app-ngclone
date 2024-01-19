@@ -31,7 +31,7 @@
 `[TR]` 
 Proje The Movie Database sitesinin API'larını kullanarak ve açık kaynak [Figma tasarımı](https://www.figma.com/file/crigUib6LIYnTmfGJLgdqZ/Movies-app-(Community)) ile hazırlanmıştır. 
 
-- Proje [Angular](https://angular.dev) kullanılarak pure bir şekilde herhangi bir ek paket kullanılmadanhazırlanmıştır.
+- Proje [Angular](https://angular.dev) kullanılarak pure bir şekilde herhangi bir ek paket kullanılmadan hazırlanmıştır.
 
 - `src/` directory içerisinde api, components ve sayfalar mevcuttur.
 
