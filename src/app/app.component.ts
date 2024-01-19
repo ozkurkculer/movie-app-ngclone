@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterModule } from '@angular/router';
-import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +10,4 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-
-  // id = inject(ActivatedRoute).snapshot.paramMap.get('id');
-  // private titleService = inject(Title);
-  // setTitle() {
-  //   this.titleService.setTitle();
-  // }
 }
