@@ -2,7 +2,7 @@
     @for (item of movies; track $index) {
     <a routerLink="/movie/{{item.id}}">
         <div class="imagecontent">
-            <img src='https://image.tmdb.org/t/p/w500{{item.poster_path}}' alt="Movie Title" width="350px"
+            <img src='https://image.tmdb.org/t/p/w500{{item.poster_path}}' alt="Movie Title"
                 class="imageposter">
             <p class="movie-index">{{$index + 1}}</p>
         </div>

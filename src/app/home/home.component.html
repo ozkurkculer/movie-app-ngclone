@@ -1,30 +1,8 @@
 <div class='h-full w-full pt-12 px-6'>
   <h1 class="heading">What do you want to watch?</h1>
-  <div class="searchbar px-6 text-secondary">
-    <p>Search</p>
-    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="Search">
-        <g id="Search_2">
-          <ellipse id="Ellipse_739" cx="10.7885" cy="11.7666" rx="8.14181" ry="8.98856" stroke="#67686D" strokeWidth="2"
-            strokeLinecap="round" strokeLinejoin="round" />
-          <path id="Line_181" d="M16.4513 18.4851L19.6433 22" stroke="#67686D" strokeWidth="2" strokeLinecap="round"
-            strokeLinejoin="round" />
-        </g>
-      </g>
-    </svg>
-  </div>
+  <app-searchbar></app-searchbar>
   <div class="slider-top-rated scrollbar-hide">
     <app-toprated-movie-list></app-toprated-movie-list>
   </div>
   <app-movie-list-categories></app-movie-list-categories>
-  <!-- <div id="tabset">
-    <div id="titles">
-
-    </div>
-    <div id="contents">
-       @if(selectedIndex === 1){
-          <app-popularmovies></app-popularmovies>
-        }
-    </div>
-  </div> -->
 </div>

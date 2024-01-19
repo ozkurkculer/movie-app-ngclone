@@ -1,11 +1,12 @@
 .imagecontent {
-    width: 350px;
+    width: 200px;
     height: auto;
     position: relative;
 }
 
 .imageposter {
     border-radius: 1rem;
+    width: 200px;
 }
 
 .top-rated-content {
@@ -26,20 +27,29 @@
     -webkit-text-fill-color: #242A32;
 }
 
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-        display: none,
+@media only screen and (min-width: 640px) {
+    .imagecontent{
+        width: 220px;
+    }
+    .imageposter{
+        width: 220px;
     }
 }
 
-.scrollbar-default {
-    -ms-overflow-style: auto;
-    scrollbar-width: auto;
+@media only screen and (min-width: 768px) {
+    .imagecontent{
+        width: 320px;
+    }
+    .imageposter{
+        width: 320px;
+    }
+}
 
-    &::-webkit-scrollbar {
-        display: block;
+@media only screen and (min-width: 1024) {
+    .imagecontent{
+        width: 350px;
+    }
+    .imageposter{
+        width: 350px;
     }
 }

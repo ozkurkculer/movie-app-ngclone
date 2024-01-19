@@ -1,0 +1,9 @@
+.searchbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    background-color: #3A3F47;
+    border-radius: 0.75rem;
+}
