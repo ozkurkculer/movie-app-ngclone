@@ -1,0 +1,59 @@
+.page-content {
+  width: 100vw;
+  height: 150vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 0 1.25rem 0 1.25rem;
+  text-align: center;
+}
+
+.page-heading {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.page-text {
+  color: #92929d;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 425px) {
+  .page-heading {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+  .page-text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-content{
+    height: 100vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .page-content{
+    height: 75vw;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .page-content{
+    height: 50vw;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .page-content{
+    height: 25vw;
+  }
+}
