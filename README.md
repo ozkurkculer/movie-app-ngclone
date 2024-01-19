@@ -1,27 +1,64 @@
-# MovieAppNgclone
+<a name="readme-top"></a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Development server
+<br />
+<div align="center">
+  <a href="https://github.com/ozkurkculer/movie-app-ngclone">
+    <img src="/src/assets/images/popcorn.png" alt="Logo" width="125" />
+  </a>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  <p align="center">
+    Movie App ngClone
+    <br />
+    <a href="https://github.com/ozkurkculer/movie-app-ngclone"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/ozkurkculer/movie-app-ngclone/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ozkurkculer/movie-app-ngclone/issues">Request Feature</a>
+  </p>
+</div>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!-- ABOUT THE PROJECT -->
+## Proje Detayları
 
-## Build
+`[TR]` 
+Proje The Movie Database sitesinin API'larını kullanarak ve açık kaynak [Figma tasarımı](https://www.figma.com/file/crigUib6LIYnTmfGJLgdqZ/Movies-app-(Community)) ile hazırlanmıştır. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Proje [Angular](https://angular.dev) kullanılarak pure bir şekilde herhangi bir ek paket kullanılmadanhazırlanmıştır.
 
-## Running unit tests
+- `src/` directory içerisinde api, components ve sayfalar mevcuttur.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- `/services` içerisinde film detaylarının ve film bilgilerinin çekildiği bir service dosyası bulunmaktadır.
 
-## Running end-to-end tests
+- Film detayı, ana sayfa, izleme listesi, arama sayfası, loading görseli bulunmaktadır.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Arama sayfası ve izleme listesi verilen task doğrultusunda hazırlanmamıştır statik hata kodları verilmektedir.
 
-## Further help
+- Sayfalar responsive olarak hazırlanmıştır. Hem masaüstü hem mobil uyumludur.Testleri yapılmıştır.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contact
+
+Mehmet Emin Özkürkçüler | [LinkedIn](https://linkedin.com/in/mehmeteminozkurkculer/)
+
+Project Link |  [Click](https://github.com/ozkurkculer/movie-app-ngclone)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/github/contributors/ozkurkculer/task-movie-app.svg?style=for-the-badge
+[contributors-url]: https://github.com/ozkurkculer/movie-app-ngclone/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ozkurkculer/task-movie-app.svg?style=for-the-badge
+[forks-url]: https://github.com/ozkurkculer/movie-app-ngclone/network/members
+[stars-shield]: https://img.shields.io/github/stars/ozkurkculer/task-movie-app.svg?style=for-the-badge
+[stars-url]: https://github.com/ozkurkculer/movie-app-ngclone/stargazers
+[license-shield]: https://img.shields.io/github/license/ozkurkculer/task-movie-app.svg?style=for-the-badge
+[license-url]: https://github.com/ozkurkculer/movie-app-ngclone/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/mehmeteminozkurkculer/
